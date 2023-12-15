@@ -1,0 +1,17 @@
+base:
+  project_dir: .
+  log_level: DEBUG
+
+process:
+  testing_user: [36, 38, 48, 120, 192, 195]
+
+gcs_data_load:
+  bucket_name: 'perqara-dendrobium'
+  path: 'raw/postgres/csv/consultations'
+  filename: 'consultations.csv'
+
+data:
+  first_date: '20230506'
+
+train:
+  n_splits: 5
